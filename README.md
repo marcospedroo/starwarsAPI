@@ -28,10 +28,10 @@ que podem ser obtidas pela API pública do Star Wars: https://swapi.dev/
 Para executar este projeto, é necessário que tenha o docker instalado e seguir os seguintes passos:
 
 - Executar o comando abaixo no terminal, posicionado na pasta do projeto
-    - docker-compose up
+    - `docker-compose up`
 - Em outra janela do terminal, executar o comando abaixo para pegar o id do container:
-    - docker ps
+    - `docker ps`
 - Na mesma janela, com o id do container, executar o comando abaixo alterando o <CONTAINER_ID>  pelo id do container:
-    - docker exec -t -i <CONTAINER_ID> bash
+    - `docker exec -t -i <CONTAINER_ID> bash`
 - Finalmente, executar o comando abaixo para realizar as migrações do banco de dados
-    - python manage.py migrate 
+    - `python manage.py migrate`
