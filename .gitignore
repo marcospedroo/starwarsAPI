@@ -128,6 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-#sqlite
+# sqlite
 db.sqlite3
+
+# PyCharm
 .idea/
