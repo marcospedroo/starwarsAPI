@@ -33,5 +33,7 @@ Para executar este projeto, é necessário que tenha o docker instalado e seguir
     - `docker ps`
 - Na mesma janela, com o id do container, executar o comando abaixo alterando o <CONTAINER_ID>  pelo id do container:
     - `docker exec -t -i <CONTAINER_ID> bash`
-- Finalmente, executar o comando abaixo para realizar as migrações do banco de dados
+- Ainda na mesma janela do terminal, executar o comando abaixo para realizar as migrações do banco de dados
     - `python manage.py migrate`
+- Finalmente, fazer a requisição para o endereço abaixo:
+    - `http://localhost:8000/planetas/`
