@@ -17,3 +17,9 @@ class PlanetaList(generics.ListCreateAPIView):
 class PlanetaDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Planeta.objects.all()
     serializer_class = PlanetaSerializer
+
+
+class PlanetaDetailCustom(generics.RetrieveAPIView):
+    lookup_field = "nome"
+    queryset = Planeta.objects.all()
+    serializer_class = PlanetaSerializer
