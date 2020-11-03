@@ -17,7 +17,7 @@ class PlanetaSerializer(serializers.ModelSerializer):
         r = requests.get(url=url, params=params)
         planetas = r.json()
         quantidade_filmes = 0
-        if planetas['results']:
-            quantidade_filmes = len(planetas['results'][0]['films'])
+        if planetas.get('results'):
+            quantidade_filmes = len(planetas.get('results')[0].get('films'))
         
         return quantidade_filmes
