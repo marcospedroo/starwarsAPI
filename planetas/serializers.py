@@ -10,7 +10,8 @@ class PlanetaSerializer(serializers.ModelSerializer):
         model = Planeta
         fields = '__all__'
 
-    def get_filmes(self, obj):
+    @staticmethod
+    def get_filmes(obj):
         url = 'https://swapi.dev/api/planets/'
         params = {'search': obj.nome}
         r = requests.get(url=url, params=params)
@@ -18,7 +19,5 @@ class PlanetaSerializer(serializers.ModelSerializer):
         quantidade_filmes = 0
         if planetas['results']:
             quantidade_filmes = len(planetas['results'][0]['films'])
-            # for planeta in planetas['results'][0]['films']:
-            #     quantidade_filmes += 1
         
         return quantidade_filmes
