@@ -49,7 +49,7 @@ BODY
 {
     "nome": "Dagobah",
     "clima": "CO",
-    "terreno": "Deserto"
+    "terreno": "DE"
 }
 ```
 Possível resposta:
@@ -115,7 +115,7 @@ HTTP/1.1 200 OK
         "filmes": 3,
         "nome": "Dagobah",
         "clima": "CO",
-        "terreno": "Deserto"
+        "terreno": "DE"
     },
     {
         "id": 2,
@@ -137,7 +137,7 @@ HTTP/1.1 200 OK
     "filmes": 3,
     "nome": "Dagobah",
     "clima": "CO",
-    "terreno": "Deserto"
+    "terreno": "DE"
 }
 ```
 
@@ -152,7 +152,7 @@ HTTP/1.1 200 OK
     "filmes": 3,
     "nome": "Dagobah",
     "clima": "CO",
-    "terreno": "Deserto"
+    "terreno": "DE"
 }
 ```
 
